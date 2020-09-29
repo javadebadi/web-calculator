@@ -1,4 +1,27 @@
 button {
   min-width: 46px;
   min-height: 46px;
+  margin: 1%;
+}
+
+input {
+  min-width: 400px;
+  width: 500px;
+  margin: 20px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+
+div.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#button-MeV {
+  width: 48%;
+}
+
+#button-fm {
+  width: 48%;
 }
