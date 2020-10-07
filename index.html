@@ -3,14 +3,35 @@
   <head>
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
     <title>Calculator</title>
   </head>
   <body>
     <input type="text" name="input-value" value="">
 
     <div class="buttons">
-      <button type="button" name="button-MeV" id="button-MeV">MeV</button>
+      <button type="button" name="button-MeV" id="button-MeV" onclick="addMeV()">MeV</button>
       <button type="button" name="button-fm" id="button-fm">fm</button>
+    </div>
+
+
+
+    <div class="dropdown">
+      <button id="prefix-mass" class="dropbtn">None</button>
+      <div class="dropdown-content">
+        <a onclick="setPrefixMass('Y')">Y <span>(Yotta)</span></a>
+        <a onclick="setPrefixMass('Z')">Z <span>(Zetta)</span></a>
+        <a onclick="setPrefixMass('E')">E <span>(Exa)</span></a>
+        <a onclick="setPrefixMass('P')">P <span>(Peta)</span></a>
+        <a onclick="setPrefixMass('T')">T <span>(Tera)</span></a>
+        <a onclick="setPrefixMass('G')">G <span>(Giga)</span></a>
+        <a onclick="setPrefixMass('M')">M <span>(Mega)</span></a>
+        <a onclick="setPrefixMass('k')">k <span>(kilo)</span></a>
+        <a onclick="setPrefixMass('h')">h <span>(hecto)</span></a>
+        <a onclick="setPrefixMass('da')">da <span>(deca)</span></a>
+        <a onclick="setPrefixMass('1')"> <span>(None)</span></a>
+        <a onclick="setPrefixMass('mu')">&mu; <span>(micro)</span></a>
+      </div>
     </div>
 
 
